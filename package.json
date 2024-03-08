@@ -1,0 +1,25 @@
+{
+  "name": "canimmunize-e2e",
+  "version": "1.0.0",
+  "description": "e2e tests for canimmunize app",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run --headless --browser chrome --env allure=true",
+    "clean:folders": "rm -R -f allure-report/ && rm -R -f allure-results/",
+    "allure:report": "npm run allure generate allure-results — clean -o allure-report && allure open allure-report"
+  },
+  "author": "Rakesh",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@shelex/cypress-allure-plugin": "^2.38.3",
+    "cypress": "12.4.0",
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-real-events": "^1.5.1",
+    "dotenv": "^16.4.5",
+    "junit-report-merger": "^3.0.2",
+    "mocha": "^9.1.3",
+    "mocha-junit-reporter": "^2.0.2"
+  }
+}

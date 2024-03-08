@@ -1,0 +1,48 @@
+name: CanImmunize e2e tests
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Setup node
+        uses: actions/setup-node@v3
+
+      - name: Cypress tests
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          install-command: npm install
+          command: npm run cy:run
+      
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+      
+      - name: Allure Report action 
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: ./allure-results
+          allure_history: allure-history
+          keep_reports: 200
+      
+      - name: Deploy report to Github pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
+      
