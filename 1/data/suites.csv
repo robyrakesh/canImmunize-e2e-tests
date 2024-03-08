@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Mar 08 11:46:04 GMT 2024","Fri Mar 08 11:46:05 GMT 2024","1632","","Validate login","","","","Validate forget password functionality - Password Reset with Invalid Email",""
+"passed","Fri Mar 08 11:45:56 GMT 2024","Fri Mar 08 11:45:58 GMT 2024","2180","","Validate login","","","","Validate Unsuccessful login",""
+"passed","Fri Mar 08 11:45:58 GMT 2024","Fri Mar 08 11:46:04 GMT 2024","5997","","Validate login","","","","Validate forget password functionality - Password Reset with Valid Email",""
+"passed","Fri Mar 08 11:45:48 GMT 2024","Fri Mar 08 11:45:56 GMT 2024","7884","","Validate login","","","","Validate successful login",""
