@@ -21,7 +21,7 @@ describe('Vaccination Records validation', function () {
         homePage.verifyNewRecordCreated(recordDetails)
     })
 
-    it('Validate successful record creation', function () {
+    it('Validate successful record deletion', function () {
         //validating user details on home page
         homePage.isUserNameDisplayed(userDetails.name)
         homePage.deleteRecord(recordDetails.firstName)
