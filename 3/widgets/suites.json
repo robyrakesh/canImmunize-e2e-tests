@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"abf15b70d8de02ee55660b1fa418ae26","name":"Validate login","statistic":{"failed":3,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":4}},{"uid":"8dbc823bba36d847c5a3e1c466eb6edf","name":"Vaccination Records validation","statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1}}]}
