@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sun Mar 10 06:59:50 GMT 2024","Sun Mar 10 07:00:21 GMT 2024","31782","","Validate login","","","","Validate forget password functionality - Password Reset with Valid Email",""
+"failed","Sun Mar 10 06:59:41 GMT 2024","Sun Mar 10 06:59:48 GMT 2024","6722","","Validate login","","","","Validate successful login",""
+"failed","Sun Mar 10 07:00:21 GMT 2024","Sun Mar 10 07:00:53 GMT 2024","31645","","Validate login","","","","Validate forget password functionality - Password Reset with Invalid Email",""
+"failed","Sun Mar 10 07:01:04 GMT 2024","Sun Mar 10 07:01:37 GMT 2024","32819","","Vaccination Records validation","","","","Validate successful record creation",""
+"failed","Sun Mar 10 07:01:37 GMT 2024","Sun Mar 10 07:02:09 GMT 2024","31924","","Vaccination Records validation","","","","Validate successful record deletion",""
+"passed","Sun Mar 10 06:59:48 GMT 2024","Sun Mar 10 06:59:50 GMT 2024","2051","","Validate login","","","","Validate Unsuccessful login",""
