@@ -7,6 +7,7 @@ e2e tests for CanImmunize web app targeting the login and home page functionalit
 
 There are few jobs defined in the e2e-tets.yml workflow, which will take care of creating a test report using allure and deploying it to the Github Page server. So, we have a publicliy available free test reporting dashboard which can be accessed by anyone. Link to the test report :- https://robyrakesh.github.io/canImmunize-e2e-tests/
 
+<img width="1353" alt="Screenshot 2024-03-10 at 12 28 35 PM" src="https://github.com/robyrakesh/canImmunize-e2e-tests/assets/47828587/ba1b3ba3-026a-43dc-bef8-9041a739507d">
 
 
 
